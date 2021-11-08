@@ -3,26 +3,26 @@
 //window.alert(a);
 //alert("Hello, \"ejemplo de comillas\"Wolf!");
 
-//var b = "concatenacion"+" para mostrar" +" una concatenacion con +";
-//document.write(b);
+var b = "concatenacion"+" para mostrar" +" una concatenacion con +";
+document.write(b);
 
-//var c = "concatenacion", d =" para mostrar", e =" una concatenacion con +";
-//document.write(e);
+var c = "concatenacion", d =" para mostrar", e =" una concatenacion con +";
+document.write(e);
 
-//var azul = "wolf";
-//var azul = azul.fontcolor("green");
-//document.write(azul);
+var azul = "wolf";
+var azul = azul.fontcolor("green");
+document.write(azul);
 
-//var yellow = "wolf";
-//var yellow = yellow.fontcolor("yellow");
-//document.write(yellow);
+var yellow = "wolf";
+var yellow = yellow.fontcolor("yellow");
+document.write(yellow);
 
 
 //document.write(3+3);
 
 function Funcion(){         //define funcion y la nombra
-    var str = "texto en verde";         //define una variabley dando un valor string
-    var res = str.fontcolor("green");//valor usa el vslor fontcolor en str
-    document.getElementById("Green_Text").innerHTML=res;// imprime el valor de la funcion
+    var res = "texto en verde";         //define una variabley dando un valor string
+    var res = res.fontcolor("green");//valor usa el vslor fontcolor en str
+    document.getElementById(res);// imprime el valor de la funcion
     
 }
