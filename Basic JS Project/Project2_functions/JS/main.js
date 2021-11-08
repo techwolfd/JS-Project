@@ -4,3 +4,5 @@ function Funcion(){         //define funcion y la nombra
     document.getElementById("conc").innerHTML=sentence;// imprime el valor de la funcion
     
 }
+
+var foo = document.getElementsByTagName("p");
