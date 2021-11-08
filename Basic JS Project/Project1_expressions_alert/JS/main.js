@@ -9,20 +9,20 @@
 //var c = "concatenacion", d =" para mostrar", e =" una concatenacion con +";
 //document.write(e);
 
-var azul = "wolf";
-var azul = azul.fontcolor("green");
-document.write(azul);
+//var azul = "wolf";
+//var azul = azul.fontcolor("green");
+//document.write(azul);
 
-var yellow = "wolf";
-var yellow = yellow.fontcolor("yellow");
-document.write(yellow);
+//var yellow = "wolf";
+//var yellow = yellow.fontcolor("yellow");
+//document.write(yellow);
 
 
-document.wri
+//document.write(3+3);
 
-function My_First_Function(){
-    var str = "texto en verde";
-    var resultado = str.fontcolor("green");
-    document.getElementById("Green_Text").innerHTML=resultado;
+function Funcion(){         //define funcion y la nombra
+    var str = "texto en verde";         //define una variabley dando un valor string
+    var res = str.fontcolor("green");//valor usa el vslor fontcolor en str
+    document.getElementById("Green_Text").innerHTML=res;// imprime el valor de la funcion
     
 }
