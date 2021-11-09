@@ -10,102 +10,29 @@
     
 <p id="conc">conc</p>
 <p id="conc" onclick = "Funcion()">click aqui</p>
-<button onclick="myFunction()" id="demo">Try it</button>
-
-
+<button onclick="myFunction()" id="demo">Try it blue</button>
 <script>
 function myFunction() {
   var x = document.getElementById("demo");
-  x.style.color = "red";
+  x.style.color = "green";
 }
 </script>
 
 <p id="demo1">Click the button to change the color of this paragraph.</p>
-
-<button onclick="myFunction()">Try it</button>
-
+<button onclick="myFunction()">Try it red</button>
 <script>
 function myFunction() {
   var x = document.getElementById("demo1");
-  x.style.color = "red";
+  x.style.color = "blue";
 }
-</script>
-
-<p id="demo2">Click the button to change the text in this paragraph.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  document.getElementById("demo2").innerHTML = "Hello World";
-}
-</script>
-
-<br>
-<p>This example calls a function which performs a calculation and returns the result:</p>
-
-<p id="demo"></p>
-
-<script>
-var x = myFunction(4, 4);
-document.getElementById("demo").innerHTML = x;
-
-function myFunction(a, b) {
-  return a * b;
-}
-</script>
-<br>
-
-<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
-<p id="demo"></p>
-
-<script>
-function toCelsius(f) {
-  return (5/9) * (f-32);
-}
-document.getElementById("demo").innerHTML = toCelsius(77);
 </script><br>
-<p>This example calls a function which performs a calculation, and returns the result:</p>
-
-<p id="demo"></p>
 
 <script>
-function myFunction(p1, p2) {
-  return p1 * p2;
-}
-document.getElementById("demo").innerHTML = myFunction(4, 3);
-</script>
-<br>
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML =
-"The temperature is " + toCelsius(77) + " Celsius";
-
-function toCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
-} 
-</script>
-<br>
-
-<p>Outside myFunction() carName is undefined.</p>
-
-<p id="demo1"></p>
-
-<p id="demo2"></p>
-
-<script>
-myFunction();
-
-function myFunction() {
-  let carName = "Volvos";
-  document.getElementById("demo1").innerHTML =
-  typeof carName + " " + carName;
-}
-
-document.getElementById("demo2").innerHTML =
-typeof carName;
-</script>
-
+    function Add(){
+        var addition = 2+2;
+        document.getElementById("Math").innerHTML="2+2="+addition;
+    }
+    </script>
+<p onclick="Add()" id="Math">Click the button.</p>
 </body>
 </html>
