@@ -11,3 +11,9 @@
         delete Animal.Sonido;//se aplica el metodo delete
         document.getElementById("Dictionary").innerHTML=Animal.Sonido;//se invoca la funcion
     }
+
+    document.write(typeof 3);
+
+    document.write(typeof "palaba");
+    document.write(" ---  " );
+    document.write(" palaba" + 15 );

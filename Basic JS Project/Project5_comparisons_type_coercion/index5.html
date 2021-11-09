@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/main5.js" >
+        
+    </script>
+</head>
+<body>
+    <p>  muestra si es NaN : </p>
+    <p id="test" onclick="nan()">click aqui</p>
+    <br>
+
+    <p>  muestra si es NanN un string : </p>
+    <p id="stri" onclick="nan2()">click aqui2</p>
+    <br>
+
+    <p>  muestra si es NanN un numero : </p>
+    <p id="007" onclick="nan3()">click aqui3</p>
+    <br>
+
+    <p>  muestra infinity :  </p>
+        <script>
+          document.write(2E310);
+        </script>
+    <br>
+
+    <p>  muestra -infinity :  </p>
+         <script>
+          document.write(-2E310);
+        </script><br>
+
+        <p>  muestra si 2E310 es infinito  :</p>
+    <p id="infi" onclick="infi()">click aqui</p>
+    <br>
+
+    <p>  boolean if 10&lt2 :  </p>
+    <script>
+     document.write(10<2);
+   </script><br>
+
+       <p>  boolean if 10&gt2 :  </p>
+       <script>
+        document.write(10>2);
+      </script><br>
+
+<p>  1/1 = 1: in console  :</p>
+<script>
+ console.log(1/1);
+</script><br>
+
+<p>  false with boolean in console.log():  </p>
+<script>
+ console.log(1>2);
+</script><br>
+
+<p>  1==11 to return false  :</p>
+<script>
+ document.write(1==11);
+</script><br>
+
+<p> 1==1 to return true  :</p>
+<script>
+ document.write(1==1);
+</script><br>
+
+<p> === to return true : </p>
+<script>
+x=10;
+y=10;
+ document.write(x===y);
+</script><br>
+
+<p> === false by writing a different data type and different value  :</p>
+<script>
+x=10;
+y="Diez";
+ document.write(x===y);
+</script><br>
+
+<p> === false by writing a different data type but the same value for both : </p>
+<script>
+a=1;
+b="1";
+ document.write(a===b);
+</script><br>
+
+<p> === false by writing the same data type but a different value for both : </p>
+<script>
+a="magnus";
+b="mag";
+ document.write(a===b);
+</script><br><br><br>
+
+<p> && 5>2&&10>4 : </p>
+<script>
+ document.write(5>2&&10>4);
+</script><br>
+
+<p> && 5>10&&10>4 : </p>
+<script>
+ document.write(5>10&&10>4);
+</script><br>
+
+<p> || 5>10||10>4:  </p>
+<script>
+ document.write(5>10||10>4);
+</script><br>
+
+<p> || 5>10||10>20 : </p>
+<script>
+ document.write(5>10||10>20);
+
+</script><br>
+
+<p id="not" onclick="not_fun()" >click aqui funcion not !(20>10) : </p>
+<p id="not2" onclick="not_fun2()" >click aqui funcion double not !(5>10)  : </p>
+
+</body>
+</html>
