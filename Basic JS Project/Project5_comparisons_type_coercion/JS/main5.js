@@ -33,3 +33,4 @@ function not_fun() {
 function not_fun2() {
     document.getElementById("not2").innerHTML=!(5>10);//negacion si la funcion es falsa
 }
+
