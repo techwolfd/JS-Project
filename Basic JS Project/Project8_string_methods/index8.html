@@ -8,14 +8,56 @@
 </head>
 <body>
 
-
+    <p>concatenacion de palabras :</p>
 <p id="concatenar">  conc</p>
-<button onclick="fullsentence()">click for the sentence</button>
-<br>
+<button onclick="fullsentence()">click here</button>
+<br><br>
 
-<p id="slice">  sli</p>
+<p id="slice"> funcion slice</p>
 <button onclick="slicemetodo()">click for the slice</button>
-<br>
+<br><br>
+
+<p>Convert string to upper case:</p>
+<button onclick="mfupper()">click aqui</button>
+<p id="upper">Hello wolf!</p><br><br>
+
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+<p>in the string "Please locate where 'locate' occurs!" search loc  </p>
+<p id="demo"></p>
+<script>
+var str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML =" position :"+str.search("loc");
+</script><br><br>
+
+
+<p id="nstr"></p>
+<button onclick="metstr()">click aqui</button>
+<br><br>
+
+<p>se muestra la presicion de 1234.5678911234 en 9 con .toPresicion(9)  </p>
+<p id="presicion"></p>
+<button onclick="metpresicion()">click aqui</button>
+<br><br>
+
+<p>The toFixed() method converts a number into a string, rounding to a specified number of decimals:</p>
+<p id="dem"></p>
+<script>
+let num = 0.123456;
+let n = num.toFixed(9);
+document.getElementById("dem").innerHTML = n;
+</script><br><br>
+
+Name: <input  id="tex" value=" hello wolf">
+<p>Click the button to display the value of the value attribute of the text field.</p>
+<p id="dem1"></p>
+<button onclick="funvalue()">Try it</button>
+
+<script>
+function funvalue() {
+  var x = document.getElementById("tex").value;
+  document.getElementById("dem1").innerHTML = x;
+}
+</script>
 
 </body>
 </html>
