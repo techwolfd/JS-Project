@@ -1,38 +1,15 @@
 alert(document.getElementById("p1").innerHTML);
 
 
-a="siempcc----cre ";
-b="recordar ";
-document.write(a+b);
-
-x="tu ";
-y="eres ";
-document.write(x+y);
 
 
 
 
 
-var d=82;
-document.write("<br>"+d +"here");
-{
-    let d =33 ;
-    document.write("<br>"+d);
-}
-document.write("<br>"+d);
-{
-    var d =33 ;
-    document.write("<br>"+d);
-}
-document.write("<br>"+d);
-
-m="unico ";
-n="como ninguno ";
-document.write(m+n);
 function contara10(){
     var digito ="";
     var x = 1;
-    while (x<11){
+    while (x<11){//funcion while
         digito+="<br>" + x;
         x++;
     }
@@ -40,26 +17,17 @@ function contara10(){
 }
 
 
-var numeros=["uno","dos","tres","cuatro","cinco","seis"];
-var content="";
-var y;
-function listnumber(){
-    for (y=0;y<numeros.length;y++){
-        content += numeros[y]+"<br>";
-    }
-    document.getElementById("listnumber").innerHTML=content;
-}
+
 
 
 function imgcats() {
-    var cat_pic= [];
-    cat_pic[0] = "durmiendo";
+    var cat_pic= []; //asignacion de matriz
+    cat_pic[0] = "durmiendo";// asignacion de valor a cada indice de la matriz
     cat_pic[1] = "jugando";
     cat_pic[2] = "comiendo";
     document.getElementById("gato").innerHTML="el gato esta  " + cat_pic[1] + "." ;
 
 }//
-
 
 
 
@@ -70,6 +38,28 @@ function constantef(){
     document.getElementById("constante").innerHTML="el costo de "+instmusical.type+" fue "+instmusical.price;
 }
 
+let carro ={
+    make : "dodge",
+    model: "viper",
+    year: "2021",
+    color: "red",
+    description : function(){
+        return "the car is a "+this.year+this.color+this.make+this.model;
+        }
+};
+document.getElementById("objetocarro").innerHTML= carro.description();
 
 
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let textos = "";
+
+function listnf(){
+for (let i = 0; i < cars.length; i++) {
+  textos += cars[i] + "<br>";
+}
+
+document.getElementById("listn").innerHTML = textos;
+}
 

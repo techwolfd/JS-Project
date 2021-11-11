@@ -9,7 +9,7 @@
 <body>
 
     <p>asyncs :</p>
-<p id="p1">  hello</p>
+<p id="p1">  hello wolf</p>
 
 
 <script>
@@ -25,6 +25,20 @@ m="unico ";
 n="como ninguno ";
 document.write(m+n);
 
+var d=82;
+document.write("<br><br>uso de let y var : <br>"+d );
+{
+    let d =33 ;
+    document.write("<br>"+d);
+}
+document.write("<br>"+d);
+{
+    var d =33 ;
+    document.write("<br>"+d);
+}
+document.write("<br>"+d);
+
+
 </script>
 
 <p>this funcion cont to 10 with while:</p>
@@ -39,9 +53,7 @@ let text = "1234567890";
 document.getElementById("length").innerHTML = text.length;
 </script><br><br>
 
-<p id="listnumber"></p>
-<button onclick="listnumber()">click aqui</button>
-<br><br>
+
 
 <p id="gato"></p>
 <button onclick="imgcats()">click aqui para matriz gato</button>
@@ -49,6 +61,21 @@ document.getElementById("length").innerHTML = text.length;
 
 <p id="constante"></p>
 <button onclick="constantef()">click aqui para constante</button>
+<br><br>
+
+<p id="objetocarro"></p>
+<br><br>
+
+<p id="de"></p>
+<script>
+function myFunction(name) {
+  return "Hello " + name;
+}
+document.getElementById("de").innerHTML = myFunction("wolf");
+</script>
+
+<p id="listn"></p>
+<button onclick="listnf()">click aqui lista de numeros</button>
 <br><br>
 
 
