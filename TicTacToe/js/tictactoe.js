@@ -75,7 +75,7 @@ function checkWinConditions (){
     //x 3 4 5 condicion
     else if (arrayIncludes('3X','4X','5X')) { drawWinLine(50,304,558,304)}
     //condition 3
-    else if (arrayIncludes('6X','7X','8X')) { drawWinLine(50,508,558,308)}
+    else if (arrayIncludes('6X','7X','8X')) { drawWinLine(50,508,558,508)}
     
     //condition 4
     else if (arrayIncludes('0X','3X','6X')) { drawWinLine(100,50,100,558)}
@@ -202,7 +202,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
             //this is necessary for the 6, 4, 2 win condition
             if(x1 <= x2 && y1 >= y2){
                 if (x < x2) {x +=10;}
-                if (y > y2) {y -=10;}
+                if (y > y2) {y +=10;}
                 if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop);}
             }
         }
