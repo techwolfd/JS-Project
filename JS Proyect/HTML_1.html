@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/JS_1.js" defer>
+        
+    </script>
+</head>
+<body>
+
+<h1>cual es tu color favorito?</h1>
+<h3>escoge tu color favorito de la lista</h3>
+
+<ul>
+    <li>rojo</li>
+    <li>amarillo</li>
+    <li>verde</li>
+    <li>azul</li>
+    <li>rosa</li>
+    <li>morado</li>
+    <li>gris</li>
+
+</ul>
+
+<h3>escoge tu color</h3>
+
+<input id="color_input" type="text">
+<button onclick="funcion_color()">enviar color</button>
+<p id="salida"></p>
+
+<h1 class="click">este texto cambiara</h1>
+<h3 class="click">este texto no cambiara</h3>
+<button onclick="hi()">click here</button>
+<br><br>
+<canvas id="id_name" width="50" height="200"></canvas>
+<canvas id="id_name" width="50" height="250" style="border: 5px solid blue;"></canvas>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello Wolf",10,50);
+    </script>
+
+
+
+
+<canvas id="myCanvas2" width="300" height="150" style="border:2px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas2");
+    var ctx = c.getContext("2d");
+    
+    var grd = ctx.createLinearGradient(0, 0, 170, 0);
+    grd.addColorStop(0, "green");
+    grd.addColorStop(.9, "white");
+    
+    ctx.fillStyle = grd;
+    ctx.fillRect(20, 20, 150, 100);
+    </script>
+
+
+
+</body>
+</html>

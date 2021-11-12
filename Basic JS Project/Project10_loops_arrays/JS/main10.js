@@ -1,10 +1,3 @@
-alert(document.getElementById("p1").innerHTML);
-
-
-
-
-
-
 
 function contara10(){
     var digito ="";
@@ -15,9 +8,6 @@ function contara10(){
     }
     document.getElementById("contara10").innerHTML=digito;
 }
-
-
-
 
 
 function imgcats() {
@@ -51,15 +41,15 @@ document.getElementById("objetocarro").innerHTML= carro.description();
 
 
 
-const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+const ca = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 
-let textos = "";
+let tex = "";
 
 function listnf(){
-for (let i = 0; i < cars.length; i++) {
-  textos += cars[i] + "<br>";
+for (let i = 0; i < ca.length; i++) {
+  tex += ca[i] + "<br>";
 }
 
-document.getElementById("listn").innerHTML = textos;
+document.getElementById("listn").innerHTML = tex;
 }
 

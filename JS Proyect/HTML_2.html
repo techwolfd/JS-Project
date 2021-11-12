@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/JS_1.js" defer>
+        
+    </script>
+     <link rel="stylesheet" type="text/css" href="css/css_1.css">
+</head>
+<body>
+
+
+    
+<h2>formulario</h2>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="" required>
+  <label for="email">correo electronico:</label><br>
+  <input type="text" id="email" name="email" value="" required>
+  <label for="phonen">numero telefonico:</label><br>
+  <input type="text" id="phonen" name="phonen" value="" required>
+
+  <input type="submit" value="Submit">
+  
+</form>
+
+
+<h1>caracteres</h1>
+<h3>click en un universo para ver un caracter</h3>
+<ul>
+    <li onclick="mostrartipo(this)" id="DC"
+     data-family_relation="Batman">DC</li>
+     <li onclick="mostrartipo(this)" id="starwars"
+     data-family_relation="Luke">Star wars</li>
+     <li onclick="mostrartipo(this)" id="Marvel"
+     data-family_relation="Thor">Marvel</li>
+     <li onclick="mostrartipo(this)" id="Startreck"
+     data-family_relation="Jean-luc">Startreck</li>
+</ul>
+
+</body>
+</html>
