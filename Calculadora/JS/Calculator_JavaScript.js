@@ -87,19 +87,20 @@ const Calculator = {
         Calculator.operator = null;
     }
     
-    // esta funcion actualiza la pantalla con el contenido de Display_Value
+    // this function updates the screen with he contents of displayvaluelue
     function Update_Display() {
         const display = document.querySelector('.calculator-screen');
         display.value = Calculator.Display_Value;
     }
     
     Update_Display();
-    //esta seccion supervisa los clics de los botones
+    //this colection monitors button clicks
     const keys = document.querySelector('.calculator-keys');
     keys.addEventListener('click', (event) => {
-        // la variable de destino respresenta un objeto al que se le hizo click
+        // lthe target variable is a objet that represents the element
+        //thas was clicked
         const { target } = event;
-        // si al elemento al que se le hizo click no es un boton, salga de la funcion
+        // if the element that was clicked on is not a button exit the function
         if (!target.matches('button')) {
             return;
         }
@@ -115,13 +116,13 @@ const Calculator = {
             Update_Display();
             return;
         }
-        // asegura que AC borre los numeros de la calculadora
+        // ensures that ac clears the numbers from the calculator
         if (target.classList.contains('all-clear')) {
             Calculator_Reset();
             Update_Display();
             return;
         }
     
-        Input.Digit(target.value);
+        Input_Digit(target.value);
         Update_Display();
     })
