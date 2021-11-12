@@ -4,7 +4,7 @@ let activePlayer = 'X';
 let selecctedSquares =[];
 
 //esta funcion esta por placing an x or o in un jugador
-function placeXorO(squareNumber){
+function placeXOrO(squareNumber){
 // esta condicion ensures un jugador que no tiene esta seleciconado realmente
 //el .some() metodo es usado para revisar cada elemento de seleccion jugador arreglo
 // para ver si este contador del jugador clickeo
@@ -32,7 +32,7 @@ function placeXorO(squareNumber){
             activePlayer = 'X';
         }
         //esta funcion plays placement  sonido
-        Audio ('../media/place.mp3');
+        audio ('./media/pass.mp3');
         //esta condicion revisa a mirar si esto es el turno de la pc
         if(activePlayer === 'O') {
             // this function disables clicking for computer choice
@@ -55,9 +55,9 @@ function placeXorO(squareNumber){
             //a random number between o and 8 is selected
             pickASquare = String(Math.floor(Math.random() * 9));
             //if the random number evaluaed returns true the square hasnot been selected yet
-            if(placeXorO(pickASquare)){
+            if(placeXOrO(pickASquare)){
                 //this line calls the function
-                placeXorO(pickASquare);
+                placeXOrO(pickASquare);
                 //this changes our boolean and ends the loop
                 success= true;
             };
@@ -71,7 +71,7 @@ function placeXorO(squareNumber){
 //drawline function is called to draw line if condition is met
 function checkWinConditions (){
     // x o 1 2 condicion
-    if      (arrayIncludes('OX','1X','2X')) { drawWinLine(50,100,558,100)}
+    if      (arrayIncludes('0X','1X','2X')) { drawWinLine(50,100,558,100)}
     //x 3 4 5 condicion
     else if (arrayIncludes('3X','4X','5X')) { drawWinLine(50,304,558,304)}
     //condition 3
@@ -112,7 +112,7 @@ function checkWinConditions (){
 
     else if (selecctedSquares.length >= 9){
         //this function playes the tie game sound
-        Audio('../media/tie.mp3');
+        audio('./media/wrong.mp3');
         //this function sets a 3 second timer before the resetgame is called
         setTimeout(function() {resetGame(); }, 1000);
     }
@@ -144,11 +144,11 @@ function disableClick(){
 //this function takes a string parameter of the path you set earlier for
 //placement sound 
 
-function Audio (audioURL){
+function audio (audioURL){
     //we create a new audio object and we pass the path as a parameter
-    let Audio = new Audio(audioURL);
+    let audio = new Audio(audioURL);
     //play method plays our audio sound
-    Audio.play();
+    audio.play();
 }
 
 //this function utilizes html canvas to draw win lines
@@ -218,7 +218,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
         //this line disallows clicking while the win sound is playing
         disableClick();
         //this line plays the win sounds
-        Audio('../media/winGame.mp3');
+        audio('./media/win.mp3');
         //this line calls our main animation loop
         animateLineDrawing();
         //this line wais 1 second then clears canvas resets game and allows clicking again
