@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>Basic AJAX Demo</title>
 		<link rel="stylesheet" href="style.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
     </head>
     <body>
         <div class="main">
@@ -21,7 +24,7 @@
 
             //step3; define the ajax response callback method  
                         ajax.onreadystatechange = function() {
-                if(ajax.readyState = 4 ){
+                if(ajax.readyState == 4 ){
                     document.getElementById('content').innerHTML = ajax.responseText;
                 }
             }
