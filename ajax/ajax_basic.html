@@ -13,22 +13,21 @@
 			</div>
 		<script type="text/javascript">
 
-
+            //ste 1 ; setup the xml http request object
             var ajax = new XMLHttpRequest();
 
-
+            //ste2; prepare the open ajax request
             ajax.open('GET', 'content.html');
-            
-            
-            ajax.onreadystatechange = function() {
+
+            //step3; define the ajax response callback method  
+                        ajax.onreadystatechange = function() {
                 if(ajax.readyState = 4 ){
                     document.getElementById('content').innerHTML = ajax.responseText;
                 }
             }
-			
 
-
-            function getContent(){
+            //step4; send the ajax request for data
+                function getContent(){
                 ajax.send();
                 document.getElementById('btn_content').style.display = 'none';
                 
