@@ -25,8 +25,7 @@ if (selectedSize === "Personal Pizza") {
 runningTotal = sizeTotal;
 console.log(selectedSize+" = $"+ sizeTotal+".00");
 console.log("size text1: " + text1);
-console.log("subtotal: $"+runningTotal+ ".00");
-//these variables will get passed on to each function
+console.log("subtotal: $"+runningTotal+ ".00");//these variables will get passed on to each function
 getTopping(runningTotal, text1);
 };
 
@@ -44,7 +43,6 @@ function getTopping(runningTotal, text1){
     var toppingCount = selectedTopping.length;
     if (toppingCount > 1 ) {
         toppingTotal = (toppingCount - 1);
-
     } else {
         toppingTotal = 0;
     }
@@ -54,6 +52,5 @@ function getTopping(runningTotal, text1){
     console.log("topping text1: "+text1);
     console.log("purchase total: "+"$"+runningTotal+".00");
     document.getElementById("showText").innerHTML=text1;
-    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
-    runningTotal+".00"+"</strong></h3>";
+    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+    runningTotal+".00"+"</strong></h3>";
 };
